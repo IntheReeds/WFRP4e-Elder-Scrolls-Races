@@ -1,0 +1,45 @@
+{
+  "id": "elder-scrolls-races",
+  "title": "Elder Scrolls Races",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Preston Schmitz",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "scripts": [
+    "scripts/chargen-esr.js"
+    
+  ],
+  "packs": [
+    {
+      "name": "esr-tables",
+      "label": "elder-scrols-races-pack",
+      "path": "packs/esr-tables",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "wfrp4e"
+    }
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "wfrp4e-core",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "description": ""
+}
