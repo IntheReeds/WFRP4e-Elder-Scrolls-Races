@@ -15,25 +15,26 @@ Hooks.on("setup", () => {
 
     WFRP4E.speciesCharacteristics["nord"] = {
         "ws": "2d10+20",
-        "bs": "2d10+20",
-        "s": "2d10+20",
-        "t": "2d10+20",
+        "bs": "2d10+15",
+        "s": "2d10+30",
+        "t": "2d10+25",
         "i": "2d10+20",
         "ag": "2d10+20",
         "dex": "2d10+20",
-        "int": "2d10+20",
-        "wp": "2d10+20",
-        "fel": "2d10+20"
+        "int": "2d10+15",
+        "wp": "2d10+25",
+        "fel": "2d10+10"
     }
 
     WFRP4E.speciesSkills["nord"] = [
-        "...",
-        "...",
-        "...",
+        "Endurance",
+        "Cool",
+        "Melee(Basic)"
+		
     ]
 
     WFRP4E.speciesTalents["nord"] = [
-        "...",
+        "Warrior Born",
         "...",
         "...",
         0
@@ -156,6 +157,53 @@ Hooks.on("setup", () => {
             "Acute Sense (Sight), Etiquette (Soldiers)",
             1
         ]
+    }
+	
+	//---------------------//
+    //Breton//
+    //---------------------//
+    WFRP4E.species["breton"] = "Breton"
+
+    WFRP4E.speciesCharacteristics["breton"] = {
+        "ws": "2d10+20",
+        "bs": "2d10+20",
+        "s": "2d10+20",
+        "t": "2d10+20",
+        "i": "2d10+20",
+        "ag": "2d10+20",
+        "dex": "2d10+20",
+        "int": "2d10+20",
+        "wp": "2d10+20",
+        "fel": "2d10+20"
+    }
+
+    WFRP4E.speciesSkills["breton"] = [
+        "...",
+        "...",
+        "...",
+    ]
+
+    WFRP4E.speciesTalents["breton"] = [
+        "Savvy",
+        "Petty Magic",
+        "...",
+        1
+    ]
+
+    WFRP4E.speciesFate["breton"] = 6;
+
+    WFRP4E.speciesRes["breton"] = 6;
+
+    WFRP4E.speciesExtra["breton"] = 10;
+
+    WFRP4E.speciesMovement["breton"] = 10;
+
+    WFRP4E.speciesAge.imperial = "2d4 + 15"
+
+    WFRP4E.speciesHeight.imperial = {
+        feet : 3,
+        inches : 3,
+        die : "1d10"
     }
 
 
